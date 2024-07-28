@@ -1,16 +1,31 @@
-# currency_converter
+# currency-converter
+Create a currency converter app with the following features:  List of supported currencies with country flags, stored locally after the first API request for offline access. Historical data for two chosen currencies over the last 7 days. Currency converter allowing users to select two currencies and input an amount to convert.
 
-A new Flutter project.
+## Instructions to Build
+1. Clone the repository.
+3. Run the app.
+'note':you must have Flutter installed.
 
-## Getting Started
+ ## App Architecture
+ The app follows the Bloc pattern for state management.I have chosen This pattern for its scalability and help me to seperate all logig from UI, making it easier to 
+ manage state changes and business logic.
 
-This project is a starting point for a Flutter application.
+ ## Image Loader Library
+ The app uses `cached_network_image` for loading and caching images.I have chosen This library for its easy of use and ability to cache images, reducing network 
+ calls and improving performance.
 
-A few resources to get you started if this is your first Flutter project:
+ ## Database
+ The app uses Hive database for store data locally.Hive is easy to use and lightweight.providing fast storage and retrieval of data, and improving app profrmancing
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ ## Handling API requests
+ The app uses the Dio package for handling API requests. Dio is a powerful HTTP client for Dart, making it an excellent choice for efficient network operations.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+
+ 
+
+
+
